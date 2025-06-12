@@ -59,3 +59,42 @@ string formatRupiah(float angka) {
     }
     return "Rp" + hasil + ",00";
 }
+
+void distribusiMahasiswa(vector<Mahasiswa*>& data,
+                         vector<Mahasiswa*>& beasiswa,
+                         vector<Mahasiswa*>& pertimbangan,
+                         vector<Mahasiswa*>& tidakLolos) {
+    cout << "\nLangkah-langkah pembagian beasiswa:\n";
+    for (size_t i = 0; i < data.size(); ++i) {
+        Mahasiswa* mhs = data[i];
+        cout << "Memproses: " << mhs->nama << " (IPK: " << mhs->ipk << ")\n";
+        if (mhs->ipk >= 3.75) {
+            beasiswa.push_back(mhs);
+            cout << "-> Dimasukkan ke kategori LOLOS BEASISWA\n";
+        } else if (mhs->ipk >= 2.5) {
+            pertimbangan.push_back(mhs);
+            cout << "-> Dimasukkan ke kategori DALAM PERTIMBANGAN\n";
+        } else {
+            tidakLolos.push_back(mhs);
+            cout << "-> Dimasukkan ke kategori TIDAK LOLOS\n";
+        }
+    }
+    cout << endl;
+}
+
+void tampilkanKelompokKasual(const char* namaKelompok, const vector<Mahasiswa*>& kelompok) {
+    cout << namaKelompok << endl;
+    if (kelompok.empty()) {
+        cout << "(Tidak ada mahasiswa di kategori ini.)\n";
+    } else {
+        for (size_t i = 0; i < kelompok.size(); ++i) {
+            kelompok[i]->tampilkanInfoKasual();
+        }
+    }
+    cout << endl;
+}
+
+int main() {
+
+    return 0;
+}
