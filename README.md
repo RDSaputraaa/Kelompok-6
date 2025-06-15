@@ -27,7 +27,6 @@ Lalu Project ini juga menghitung total biaya beasiswa yang dikeluarkan dan menyu
     ~ char nim[20]
    
     ~ float ipk
-    Metode tampilkanInfoKasual() digunakan untuk mencetak info singkat mahasiswa secara rapi.
 
 2. Membuat fungsi quickSort
    
@@ -42,7 +41,6 @@ Lalu Project ini juga menghitung total biaya beasiswa yang dikeluarkan dan menyu
     ~ pertimbangan
    
     ~ tidakLolos
-    Serta menampilkan proses klasifikasinya secara real-time.
 
 4. Membuat fungsi tampilkanKelompokKasual
    
