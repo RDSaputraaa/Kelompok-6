@@ -9,21 +9,52 @@ Project ini adalah penggabungan hasil dari semua materi C++, yang dimana kami me
 Lalu Project ini juga menghitung total biaya beasiswa yang dikeluarkan dan menyusun antrian wawancara untuk kategori Dalam Pertimbangan.
 
 ❤️Fungsi Program Utama ialah:
-
-📝 Input data mahasiswa (nama, NIM, IPK)
-
-⚡ Penyusunan mahasiswa berdasarkan IPK tertinggi menggunakan Quick Sort
-
-🎯 Pembagian kategori beasiswa otomatis
-
-💰 Perhitungan total dana beasiswa dengan format Rupiah
-
-⏳ Penyusunan antrian wawancara berbasis struktur data Queue
-
-🧹 Manajemen memori dinamis dengan new dan delete
+  📝 Input data mahasiswa (nama, NIM, IPK)
+  ⚡ Penyusunan mahasiswa berdasarkan IPK tertinggi menggunakan Quick Sort
+  🎯 Pembagian kategori beasiswa otomatis
+  💰 Perhitungan total dana beasiswa dengan format Rupiah
+  ⏳ Penyusunan antrian wawancara berbasis struktur data Queue
+  🧹 Manajemen memori dinamis dengan new dan delete
 
 🛠️ Struktur dan Penjelasan Kode
+1. Membuat class Mahasiswa
+    Lalu Menampung data dasar mahasiswa Seperti:
+    ~ char nama[100]
+    ~ char nim[20]
+    ~ float ipk
+Metode tampilkanInfoKasual() digunakan untuk mencetak info singkat mahasiswa secara rapi.
 
+2. Membuat fungsi quickSort
+    Untuk mengurutkan mahasiswa berdasarkan IPK secara descending. Digunakan untuk memprioritaskan mahasiswa dengan IPK tertinggi saat         proses klasifikasi.
+
+3. Membuat fungsi distribusiMahasiswa
+    Lalu Memproses data mahasiswa dan mendistribusikan ke 3 kategori:
+    ~ beasiswa
+    ~ pertimbangan
+    ~ tidakLolos
+Serta menampilkan proses klasifikasinya secara real-time.
+
+4. Membuat fungsi tampilkanKelompokKasual
+    Mencetak semua mahasiswa dalam satu kategori ke konsol dengan tampilan yang mudah dibaca.
+
+5. Membuat fungsi hitungTotalBiayaBeasiswa
+    Menghitung total dana beasiswa yang dikeluarkan berdasarkan nominal tetap per mahasiswa.
+
+6. Membuat fungsi formatRupiah
+    Untuk konversi angka menjadi format rupiah seperti:
+      Rp1.500.000,00
+
+7. main()
+   Fungsi utama yang dilakukan di main() ialah:
+     ~ Menerima input jumlah mahasiswa
+     ~ Memasukkan data mahasiswa
+     ~ Melakukan penyortiran
+     ~ Membagi kategori
+     ~ Menghitung dana beasiswa
+     ~ Menyusun antrian wawancara berdasarkan NIM
+     ~ Membersihkan memori dinamis
+
+Anggota Kelompok 👥
 
 Arkhan Al Hakim Larabe 	2417053002
 
