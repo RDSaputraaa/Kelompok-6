@@ -10,17 +10,12 @@ Lalu Project ini juga menghitung total biaya beasiswa yang dikeluarkan dan menyu
 
 ❤️Fungsi Program Utama ialah:
 
-  📝 Input data mahasiswa (nama, NIM, IPK)
-  
-  ⚡ Penyusunan mahasiswa berdasarkan IPK tertinggi menggunakan Quick Sort
-  
-  🎯 Pembagian kategori beasiswa otomatis
-  
-  💰 Perhitungan total dana beasiswa dengan format Rupiah
-  
-  ⏳ Penyusunan antrian wawancara berbasis struktur data Queue
-  
-  🧹 Manajemen memori dinamis dengan new dan delete
+    ~Input data mahasiswa (nama, NIM, IPK)
+    ~Penyusunan mahasiswa berdasarkan IPK tertinggi menggunakan Quick Sort
+    ~Pembagian kategori beasiswa otomatis
+    ~Perhitungan total dana beasiswa dengan format Rupiah
+    ~Penyusunan antrian wawancara berbasis struktur data Queue
+    ~Manajemen memori dinamis dengan new dan delete
 
 🛠️ Struktur dan Penjelasan Kode
 1. Membuat class Mahasiswa
@@ -32,8 +27,7 @@ Lalu Project ini juga menghitung total biaya beasiswa yang dikeluarkan dan menyu
     ~ char nim[20]
    
     ~ float ipk
-   
-Metode tampilkanInfoKasual() digunakan untuk mencetak info singkat mahasiswa secara rapi.
+    Metode tampilkanInfoKasual() digunakan untuk mencetak info singkat mahasiswa secara rapi.
 
 2. Membuat fungsi quickSort
    
@@ -48,8 +42,7 @@ Metode tampilkanInfoKasual() digunakan untuk mencetak info singkat mahasiswa sec
     ~ pertimbangan
    
     ~ tidakLolos
-   
-Serta menampilkan proses klasifikasinya secara real-time.
+    Serta menampilkan proses klasifikasinya secara real-time.
 
 4. Membuat fungsi tampilkanKelompokKasual
    
