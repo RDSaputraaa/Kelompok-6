@@ -95,6 +95,29 @@ void tampilkanKelompokKasual(const char* namaKelompok, const vector<Mahasiswa*>&
 }
 
 int main() {
+    vector<Mahasiswa*> semuaMahasiswa;
+    int jumlah;
+    cout << "Masukkan jumlah mahasiswa: ";
+    cin >> jumlah;
+    cin.ignore();
+
+    for (int i = 0; i < jumlah; ++i) {
+        char nama[100], nim[20];
+        float ipk;
+
+        cout << "\nData Mahasiswa ke-" << i + 1 << ":\n";
+        cout << "Nama: ";
+        cin.getline(nama, sizeof(nama));
+        cout << "NIM: ";
+        cin.getline(nim, sizeof(nim));
+        cout << "IPK: ";
+        cin >> ipk;
+        cin.ignore();
+
+        semuaMahasiswa.push_back(new Mahasiswa(nama, nim, ipk));
+    }
+
+    quickSort(semuaMahasiswa, 0, semuaMahasiswa.size() - 1);
 
     return 0;
 }
